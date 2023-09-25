@@ -1,0 +1,18 @@
+package selfStudy;
+import java.util.Scanner;
+public class SwapToN 
+{
+public static void main(String args[])
+{
+	int a,b,t;
+	Scanner sc= new Scanner(System.in);
+	System.out.println("Enter Two numbers");
+	a= sc.nextInt();
+	b=sc.nextInt();
+	System.out.println("Before swapping :  "+a+" " +b);
+	t=a;
+	a=b;
+	b=t;
+	System.out.println("After swapping :"+a+" " +b);
+}
+}
