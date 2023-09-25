@@ -1,0 +1,38 @@
+package praticeselfcode;
+class ComplexNo
+{
+	    private double real;
+	    private double imaginary;
+
+	    public ComplexNo(double real, double imaginary) {
+	        this.real = real;
+	        this.imaginary = imaginary;
+	    }
+
+	    public ComplexNo add(ComplexNo other)
+	    {
+	        double realSum = this.real + other.real;
+	        double imaginarySum = this.imaginary + other.imaginary;
+	        return new ComplexNo(realSum, imaginarySum);
+	    }
+
+	    @Override
+	    public String toString()
+	    {
+	        return real + " + " + imaginary + "i";
+	    }
+	}
+
+public class ComplexNumberAddition
+{
+	    public static void main(String[] args)
+	    {
+	        ComplexNo a = new ComplexNo(2.5, 3.0);
+	    	ComplexNo b = new ComplexNo(1.5, 2.5);
+	        ComplexNo sum = a.add(b);
+	        System.out.println("Sum: " + sum);
+	    }
+	}
+
+
+
