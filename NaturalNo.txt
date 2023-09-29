@@ -1,0 +1,30 @@
+package selfStudy;
+import java.util.Scanner;
+public class NaturalNo 
+{
+	 public static int sumOfNaturalNo(int n)
+	 {
+	        
+	        return n * (n + 1) / 2;
+	    }
+
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        System.out.print("Enter a positive integer (n): ");
+	        int n = scanner.nextInt();
+
+	        if (n > 0) 
+	        {
+	            int sum = sumOfNaturalNo(n);
+	            System.out.println("Sum of first " + n + " natural numbers is: " + sum);
+	        } 
+	        else
+	        {
+	            System.out.println("Enter a positive integer.");
+	        }
+
+	        
+	    }
+	}
+
